@@ -86,7 +86,7 @@ Library-Web-System/
 1. Download or clone the repository.
 
 ```bash
-git clone https://github.com/your-username/Library-Web-System.git
+git clone https://github.com/Shooqaladwani/Library-Web-System.git
 ```
 
 2. Open the project folder.
