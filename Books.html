@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--*************** SWIPER CSS ***************-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <!--*************** CSS ***************-->
+    <link rel="stylesheet" href="project/css/styles.css">
+
+    <!--*************** REMIXICONS ***************-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <title>BookFlow - Books</title>
+    <style>
+        .featured__card {
+            float: left;
+            background-color: rgba(255, 255, 255, 0.317);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+
+
+        .featured__card:hover {
+            transform: translateY(-10px);
+            background-color: rgba(47, 47, 47, 0.9);
+        }
+
+        .featured__img {
+            width: 150px;
+            margin: 0 auto .75rem;
+            border-radius: 15px ;
+        }
+
+
+        .featured__title {
+            font-size: 1.5em;
+            color: #503a1d;
+            margin-top: 10px;
+        }
+
+        .featured__description {
+            font-size: 1em;
+            color: #333;
+            padding: 10px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(252, 219, 202, 0.658);
+            border-radius: 15px;
+            display: none;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            background-color: #503a1d;
+            color: white;
+        }
+
+        .swiper-button-prev i,
+        .swiper-button-next i {
+            font-size: 24px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <body>
+        <div class="video-wrapper">
+            <video autoplay muted loop>
+                <source src="project/books/Background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <header>
+            <img src="project/books/Logo.png" alt="Public Library">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Books.html">Books</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="Dashboard.php">Dashboard</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+
+            <!--*************** FEATURED ***************-->
+            <section class="featured section" id="featured">
+                <h1>Our Books</h1>
+
+                <div class="featured__container container">
+
+                    <div class="featured__swiper swiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Book 1 -->
+                            <article class="featured__card swiper-slide" data-book-id="1001">
+                                <img src="project/books/book-1.png" alt="Book 1" class="featured__img">
+                                <h2 class="featured__title">The Silent Patient</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 2 -->
+                            <article class="featured__card swiper-slide" data-book-id="1002">
+                                <img src="project/books/book-2.png" alt="Book 2" class="featured__img">
+                                <h2 class="featured__title">The Midnight Library</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 3 -->
+                            <article class="featured__card swiper-slide" data-book-id="1003">
+                                <img src="project/books/book-3.png" alt="Book 3" class="featured__img">
+                                <h2 class="featured__title">Shatter Me</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 4 -->
+                            <article class="featured__card swiper-slide" data-book-id="1004">
+                                <img src="project/books/book-4.png" alt="Book 4" class="featured__img">
+                                <h2 class="featured__title">Caraval</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 5 -->
+                            <article class="featured__card swiper-slide" data-book-id="1005">
+                                <img src="project/books/book-5.png" alt="Book 5" class="featured__img">
+                                <h2 class="featured__title">13 Reasons Why</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 6 -->
+                            <article class="featured__card swiper-slide" data-book-id="1006">
+                                <img src="project/books/book-6.png" alt="Book 6" class="featured__img">
+                                <h2 class="featured__title">Little Women</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 7 -->
+                            <article class="featured__card swiper-slide" data-book-id="1007">
+                                <img src="project/books/book-7.png" alt="Book 7" class="featured__img">
+                                <h2 class="featured__title">A Good Girl’s Guide to Murder</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 8 -->
+                            <article class="featured__card swiper-slide" data-book-id="1008">
+                                <img src="project/books/book-8.png" alt="Book 8" class="featured__img">
+                                <h2 class="featured__title">Daddy Long Legs</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 9 -->
+                            <article class="featured__card swiper-slide" data-book-id="1009">
+                                <img src="project/books/book-9.png" alt="Book 9" class="featured__img">
+                                <h2 class="featured__title">The Book Thief</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 10 -->
+                            <article class="featured__card swiper-slide" data-book-id="1010">
+                                <img src="project/books/book-10.png" alt="Book 10" class="featured__img">
+                                <h2 class="featured__title">It Ends with Us</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 11 -->
+                            <article class="featured__card swiper-slide" data-book-id="1011">
+                                <img src="project/books/book-11.png" alt="Book 11" class="featured__img">
+                                <h2 class="featured__title">Legendary</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 12 -->
+                            <article class="featured__card swiper-slide" data-book-id="1012">
+                                <img src="project/books/book-12.png" alt="Book 12" class="featured__img">
+                                <h2 class="featured__title">Final Caraval</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+
+                            <!-- Book 13 -->
+                            <article class="featured__card swiper-slide" data-book-id="1013">
+                                <img src="project/books/book-13.png" alt="Book 13" class="featured__img">
+                                <h2 class="featured__title">Fourth Wing</h2>
+                                <div class="featured__description" style="display: none;">
+                                </div>
+                            </article>
+                        </div>
+
+
+                        <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--*************** SWIPER JS ***************-->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <!--*************** jQuery ***************-->
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <!--*************** MAIN JS ***************-->
+            <script src="project/js/main.js"></script>
+
+            <footer>
+                <p>&copy; 2025 BookFlow. All rights reserved.</p>
+            </footer>
+    </body>
+
+</html>
